@@ -3,7 +3,7 @@
   ## Purpose
   
   This hardware project is intended for people posessing a 10MHz sinusoidal reference oscillator (GPS DO / Rubidium Source) 
-  that require a 25MHz reference for use with an SDR (Adalm-Pluto) or LNB (modified Bulls-Eye).
+  but require a 25MHz reference for use with an SDR (Adalm-Pluto) or LNB (modified Bulls-Eye).
 
   ## Implementation
 
