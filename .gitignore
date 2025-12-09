@@ -4,6 +4,8 @@
 *.kicad_prl
 sym-lib-table-bak
 fp-lib-table-bak
+Ampli_20dB-Backups/
+Freq_Reference-backups/
 
 # OS / Editor junk
 .DS_Store
