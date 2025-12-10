@@ -22,14 +22,15 @@
   
   ### Preparations
   1. Solder SMD parts on F-side and B-side **EXCEPT: power jumpers R10, R14, R22 and Edge-mount coax connectors**
-  2. Solder through-hole parts: potentiometer R15 and U6 regulator
+  2. Solder through-hole parts: potentiometer R15 and U6 regulator, LEDs D1 and D2 (Square pin is the cathode -> short leg).
   ### Power-supply
   3. Connect VBUS to a 16V power-supply and while measuring (with a DVM) the voltage between TP_GND and TP_15V
      trim potentiometer R15 to obtain 15V.
   4. Solder through-hole parts: potentiometers R12, R17 and regulators U2, U3.
   5. Trim potentiometer R17 while measuring TP_P5V to get 5V
-  6. Trim potentiometer R12 which measuring TP_P3V3 to get 3.3V
-  7. Solder power jumpers: R10, R14 (+5V and +3.3V) and measure the current going into VBUS (IBUS) to be ~30mA.
+  6. Trim potentiometer R12 while measuring TP_P3V3 to get 3.3V
+  7. Solder power jumpers: R10, R14 (+5V and +3.3V) and measure the current going into VBUS (IBUS) to be ~30mA. 
+  LED D2 should be lit.
   ### 10MHz distributor
   8. Solder Edge-mount SMA coax J1, J2, J3, J4, transistor Q1 and potentiometer R5.
   9. Inject 10MHz ~1.3Vpp in port 10MHz in (J4).
@@ -59,6 +60,11 @@
   19. Power-down, connect the DB9 side of the flat-cable to the Rb reference, connect the Rb reference 10MHz output
   to J4 the 10MHz input.
   20. Power-up, check supplies, verify and if needed correct the 10MHz 50% duty-factor setting R5. 
+  LED D1 should be lit once the Rb reference has reached operating temperature and is frequency locked.
+  
+  Notes: 
+  - The FE-5650 will initially draw >1A from the 15V regulator.
+  - The FE-5650 takes a few minutes to heat up and lock to the correct frequency.
   
   ## Trouble shooting
   - In case of no output on the 50MHz port, measure the DC voltages at the outputs of U4 (+3.4V) and U5 (+4.9V).
