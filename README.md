@@ -1,5 +1,7 @@
   # 10MHz Frequency Reference Distributor and 25MHz generator and distributor.
 
+  ![F4LHU Logo](/Imgs/f4lhu_logo.png "Logo")
+  
   ## Purpose
   
   This hardware project is intended for people posessing a 10MHz sinusoidal reference oscillator (GPS DO / Rubidium Source) 
