@@ -56,10 +56,12 @@
   18. Connect a flat-cable to J6 and **before connecting the correct Rb reference (FE-5650)**, 
   measure the supply voltages on the DB9 connector.
   
-	- Pin 1: +15V
-	- Pin 2: Gnd +15V
-	- Pin 4: +5V
-	- Pin 5: Gnd +5V
+	| Pin | Function |
+	|-----|----------|
+	|  1  | +15V     |
+	|  2  | Gnd +15V |
+	|  4  | +5V      |
+	|  5  | Gnd +5V  |
 	
   19. Power-down, connect the DB9 side of the flat-cable to the Rb reference, connect the Rb reference 10MHz output
   to J4 the 10MHz input.
