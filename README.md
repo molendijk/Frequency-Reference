@@ -56,12 +56,12 @@
   18. Connect a flat-cable to J6 and **before connecting the correct Rb reference (FE-5650)**, 
   measure the supply voltages on the DB9 connector.
   
-	| Pin | Function |
-	| --- | -------- |
-	|  1  | +15V     |
-	|  2  | Gnd +15V |
-	|  4  | +5V      |
-	|  5  | Gnd +5V  |
+| Pin | Function |
+| --- | -------- |
+|  1  | +15V     |
+|  2  | Gnd +15V |
+|  4  | +5V      |
+|  5  | Gnd +5V  |
 	
   19. Power-down, connect the DB9 side of the flat-cable to the Rb reference, connect the Rb reference 10MHz output
   to J4 the 10MHz input.
@@ -69,12 +69,12 @@
   LED D1 should be lit once the Rb reference has reached operating temperature and is frequency locked.
   
   Notes: 
-  - The FE-5650 will initially draw >1A from the 15V regulator.
+  - The FE-5650 will initially, while heating up, draw >1A from the 15V regulator.
   - The FE-5650 takes a few minutes to heat up and lock to the correct frequency.
   
   ## Trouble shooting
   - In case of no output on the 50MHz port, measure the DC voltages at the outputs of U4 (+3.4V) and U5 (+4.9V).
-  If one of these is absent verify the solder joints of either L1 or L2.
+  If one of these is absent, verify the solder joints of either L1 or L2.
  
   ## Issues with Rev 1.0.0 built 20251031
   - The SMA Edge-mount connector footprints have a greater ground pin spacing than the "standard" Edge-mount SMA
