@@ -5,7 +5,12 @@
   ## Purpose
   
   This hardware project is intended for people posessing a 10MHz sinusoidal reference oscillator (GPS DO / Rubidium Source) 
-  but require a 25MHz reference for use with an SDR (Adalm-Pluto) or LNB (modified Bulls-Eye).
+  but require a 25MHz reference for use with an SDR (Adalm-Pluto), ADF4351 (Evaluation board) or a 
+  LNB (modified Bulls-Eye).
+  
+  https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/adalm-pluto.html
+  https://github.com/molendijk/QO100_LO_ADF4351_Loader
+  https://3b8mars.org/wp-content/uploads/2023/10/Bulleye-LNB-modification-for-external-clocking-updated-Oct2023.pdf
 
   ## Implementation
 
@@ -90,4 +95,8 @@
   1. The series terminated DC Coupled outputs are intended to be connected to high-Z (3.3V) logic level inputs.
      The AC Coupled outputs can be terminated in 50 Ohms, typically like when connected to a clock input of an SDR.
   2. The 6th order 50MHz filter is constructed using 3 side-coupled (LC) resonating circuits that yield a good quality factor.
-     More details on the construction of this filter will follow soon.
+     More details on the construction of this filter will follow soon. 
+  3. Certain devices need a sinusoidal 25MHz clock to operate correctly. In this case a simple low-pass filter can
+     be used to remove much of the higher harmonics.
+  4. Be sure to check permitted input signal levels on 25MHz inputs and if needed, add additional attenuation.
+
