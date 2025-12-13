@@ -1,6 +1,6 @@
   # 10MHz Frequency Reference Distributor and 25MHz generator and distributor.
 
-  ![F4LHU Logo](/Imgs/f4lhu_logo.png "Logo")
+  ![F4LHU Logo](/Imgs/f4lhu_logo_small.png "Logo")
   
   ## Purpose
   
@@ -57,7 +57,7 @@
   measure the supply voltages on the DB9 connector.
   
 	| Pin | Function |
-	|-----|----------|
+	| --- | -------- |
 	|  1  | +15V     |
 	|  2  | Gnd +15V |
 	|  4  | +5V      |
